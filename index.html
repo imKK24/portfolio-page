@@ -2,44 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>the KK stop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Creative Developer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">the KK stop</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"></a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-          Dropdown link
-        </a>
-        <!-- <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div> -->
-      </li>
+
+  <nav>
+    <div class="logo">PORTFOLIO</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </div>
-</nav>
+  </nav>
+
+  <header id="home" class="hero">
+    <h1 class="uppercase-text">Welcome to My World</h1>
+    <p class="typewriter">I am a passionate <span class="dynamic-text"></span></p>
+    <a href="#projects" class="btn">View My Work</a>
+  </header>
+
+  <section id="projects" class="container">
+    <h2 class="uppercase-text">My Projects</h2>
+    <div class="project-grid">
+      <div class="card">
+        <h3>Customer Segmentation</h3>
+        <p>An ML project using PCA and Agglomerative Clustering to group customers.</p>
+        <button class="btn" onclick="showDetails('Project 1')">Details</button>
+      </div>
+      <div class="card">
+        <h3>PCA Analysis</h3>
+        <p>Dimensionality reduction on the Breast Cancer dataset using Python.</p>
+        <button class="btn" onclick="showDetails('Project 2')">Details</button>
+      </div>
+      <div class="card">
+        <h3>LDA Analysis</h3>
+        <p>Supervised dimensionality reduction for better class separation.</p>
+        <button class="btn" onclick="showDetails('Project 3')">Details</button>
+      </div>
+      <div class="card">
+        <h3>Data Visualization</h3>
+        <p>Interactive visualizations created with D3.js and Python libraries.</p>
+        <button class="btn" onclick="showDetails('Project 3')">Details</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="container bg-light">
+    <h2 class="uppercase-text">About Me</h2>
+    <p class="capitalize-text">i am an engineering student focusing on software development and data science.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Creative Portfolio. Built with CSS Animations.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
