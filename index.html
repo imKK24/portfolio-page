@@ -1,74 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Creative Developer</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMKK Portfolio | Developer & Data Scientist</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <nav>
-    <div class="logo">THE KK STOP</div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <nav>
+        <div class="logo">PORTFOLIO</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#ethics">Ethics</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
 
-  <header id="home" class="hero">
-    <h1 class="uppercase-text">Welcome to My World</h1>
-    <p class="typewriter">I am a passionate <span class="dynamic-text"></span></p>
-    <a href="#projects" class="btn">View My Work</a>
-  </header>
+    <header id="home" class="hero">
+        <h1 class="uppercase-text">Data Driven Innovation</h1>
+        <p class="typewriter">I am a passionate <span class="dynamic-text"></span></p>
+        <a href="#projects" class="btn">Explore My Work</a>
+    </header>
 
-  <section id="projects" class="container">
-    <h2 class="uppercase-text">My Projects</h2>
-    <div class="project-grid">
-      <div class="card">
-        <h3>Customer Segmentation</h3>
-        <p>An ML project using PCA and Agglomerative Clustering to group customers.</p>
-        <button class="btn" onclick="showDetails('Project 1')">Details</button>
-      </div>
-      <div class="card">
-        <h3>PCA Analysis</h3>
-        <p>Dimensionality reduction on the Breast Cancer dataset using Python.</p>
-        <button class="btn" onclick="showDetails('Project 2')">Details</button>
-      </div>
-      <div class="card">
-        <h3>LDA Analysis</h3>
-        <p>Supervised dimensionality reduction for better class separation.</p>
-        <button class="btn" onclick="showDetails('Project 3')">Details</button>
-      </div>
-      <div class="card">
-        <h3>Data Visualization</h3>
-        <p>Interactive visualizations created with D3.js and Python libraries.</p>
-        <button class="btn" onclick="showDetails('Project 3')">Details</button>
-      </div>
-    </div>
-  </section>
+    <section id="projects" class="container">
+        <h2 class="uppercase-text">Machine Learning Projects</h2>
+        <div class="project-grid">
+            <div class="card">
+                <h3>PCA Analysis</h3>
+                <p>Reducing complexity while retaining 95% variance.</p>
+                <button class="btn" onclick="showDetails('Project 1')">Project Details</button>
+            </div>
+            <div class="card">
+                <h3>LDA Separability</h3>
+                <p>Maximizing class separation for better classification.</p>
+                <button class="btn" onclick="showDetails('Project 2')">Project Details</button>
+            </div>
+        </div>
+    </section>
 
-  <section id="about" class="container bg-light">
-    <h2 class="uppercase-text">About Me</h2>
-    <p class="capitalize-text">i am an engineering student focusing on software development and data science along with
-      ML and AI.</p>
-  </section>
+    <section id="ethics" class="container bg-light">
+        <h2 class="uppercase-text">Professional Ethics</h2>
+        <div class="card">
+            <p>Insights into <strong>Moral vs. Morality</strong> and ethical frameworks for engineers.</p>
+            <button class="btn" onclick="showDetails('Ethics')">View Ethics Notes</button>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2026 Creative Portfolio. Built with CSS Animations.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2026 imkk24 Portfolio. Hosted on GitHub Pages.</p>
+    </footer>
 
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
