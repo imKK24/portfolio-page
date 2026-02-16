@@ -71,7 +71,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97');
     background-size: cover;
     color: white;
     text-align: center;
@@ -92,10 +92,26 @@ nav ul li a:hover {
 }
 
 @keyframes word-switch {
-    0%, 25% { content: "Developer"; }
-    26%, 51% { content: "Data Scientist"; }
-    52%, 77% { content: "Analyst"; }
-    78%, 100% { content: "Engineer"; }
+
+    0%,
+    25% {
+        content: "Developer";
+    }
+
+    26%,
+    51% {
+        content: "Data Scientist";
+    }
+
+    52%,
+    77% {
+        content: "Analyst";
+    }
+
+    78%,
+    100% {
+        content: "Engineer";
+    }
 
 }
 
@@ -112,13 +128,25 @@ nav ul li a:hover {
 }
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes blink {
-    from, to { border-color: transparent; }
-    50% { border-color: var(--primary-color); }
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--primary-color);
+    }
 }
 
 
@@ -146,13 +174,13 @@ nav ul li a:hover {
     background: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .capitalize-text {
@@ -184,4 +212,51 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+/* ==========================================================================
+   MOBILE RESPONSIVENESS (Screens < 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+    /* 1. Adjust Typography */
+    .uppercase-text {
+        font-size: 2rem;
+        /* Shrink hero text for smaller screens */
+    }
+
+    /* 2. Stack Navigation Links Vertically */
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    /* 3. Adjust Layout Containers */
+    .container {
+        padding: 40px 5%;
+        /* Less side padding on mobile */
+    }
+
+    /* 4. Fix Grid Columns */
+    .project-grid {
+        grid-template-columns: 1fr;
+        /* Force one card per row */
+    }
+
+    /* 5. Adjust the Hero Height */
+    .hero {
+        height: 80vh;
+        /* Shorter hero section */
+    }
 }

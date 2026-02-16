@@ -11,7 +11,7 @@ function showDetails(project) {
     let techStack = "";
 
     // Switch case to handle different projects
-    switch(project) {
+    switch (project) {
         case 'Project 1':
             title = "Customer Segmentation using ML";
             description = "Developed a system to group customers based on purchasing behavior. I used a custom manual standardization function to process the data before applying clustering.";
@@ -46,7 +46,7 @@ function showDetails(project) {
 // While CSS handles simple smooth scrolling, this JS ensures consistent 
 // behavior across all browsers when clicking navigation links.
 document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
@@ -63,7 +63,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 /* ==========================================================================
    3. NAVIGATION BACKGROUND CHANGE ON SCROLL
    ========================================================================== */
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const nav = document.querySelector('nav');
     if (window.scrollY > 50) {
         nav.style.background = '#000'; // Darker background when scrolling
