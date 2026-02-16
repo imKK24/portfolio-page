@@ -92,9 +92,11 @@ nav ul li a:hover {
 }
 
 @keyframes word-switch {
-    0%, 33% { content: "Developer"; }
-    34%, 66% { content: "Data Scientist"; }
-    67%, 100% { content: "Engineer"; }
+    0%, 25% { content: "Developer"; }
+    26%, 51% { content: "Data Scientist"; }
+    52%, 77% { content: "Analyst"; }
+    78%, 100% { content: "Engineer"; }
+
 }
 
 
